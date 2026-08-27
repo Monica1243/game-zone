@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Snake game artwork</title>
+  <desc id="desc">A bright green snake winds across a blue arcade board toward a red fruit.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="30" x2="730" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#79C7FF"/>
+      <stop offset="1" stop-color="#315DB8"/>
+    </linearGradient>
+    <linearGradient id="snake" x1="250" y1="160" x2="560" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E3FF75"/>
+      <stop offset="1" stop-color="#9BE53D"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#FFFFFF" stroke-opacity=".09" stroke-width="2"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#173B78" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="36" fill="url(#bg)"/>
+  <circle cx="95" cy="84" r="155" fill="#FFFFFF" opacity=".08"/>
+  <circle cx="724" cy="438" r="190" fill="#132F72" opacity=".14"/>
+  <rect x="105" y="55" width="590" height="390" rx="48" fill="#153B79" fill-opacity=".22" stroke="#FFFFFF" stroke-opacity=".2" stroke-width="3"/>
+  <rect x="105" y="55" width="590" height="390" rx="48" fill="url(#grid)"/>
+  <g filter="url(#shadow)">
+    <path d="M244 175H438V315H548" fill="none" stroke="#62942B" stroke-opacity=".24" stroke-width="70" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 9)"/>
+    <path d="M244 175H438V315H548" fill="none" stroke="url(#snake)" stroke-width="66" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M275 175h30M342 175h30M438 215v28M475 315h30" fill="none" stroke="#5D9825" stroke-opacity=".22" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="548" cy="315" r="37" fill="#A4EB45"/>
+    <circle cx="559" cy="302" r="5.5" fill="#163754"/>
+    <circle cx="559" cy="328" r="5.5" fill="#163754"/>
+    <path d="M582 315h18l11-8M600 315l11 8" fill="none" stroke="#FF6F76" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g filter="url(#shadow)">
+    <circle cx="565" cy="155" r="27" fill="#FF6F6F"/>
+    <circle cx="555" cy="145" r="8" fill="#FFAAA0" opacity=".75"/>
+    <path d="M566 129c1-16 12-25 25-27-2 14-10 24-25 27Z" fill="#D9F96B"/>
+    <path d="M565 131c-2-12-6-19-13-25" fill="none" stroke="#31562A" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(133 84)">
+    <rect width="118" height="38" rx="19" fill="#FFFFFF" fill-opacity=".9"/>
+    <circle cx="22" cy="19" r="5" fill="#9BE53D"/>
+    <text x="36" y="24" fill="#17365E" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1">SCORE 24</text>
+  </g>
+  <g fill="#FFFFFF" opacity=".55">
+    <circle cx="151" cy="400" r="5"/><circle cx="176" cy="400" r="5"/><circle cx="201" cy="400" r="5"/>
+  </g>
+</svg>

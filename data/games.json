@@ -1,0 +1,79 @@
+[
+  {
+    "id": "snake",
+    "title": "Snake",
+    "description": "Guide the growing snake, collect every bite, and stay clear of your own trail.",
+    "category": "arcade",
+    "image": "assets/images/snake.svg",
+    "imageAlt": "A green snake winding across a blue arcade board",
+    "meta": "High score",
+    "tag": "Keyboard friendly",
+    "url": "games/snake/index.html"
+  },
+  {
+    "id": "tic-tac-toe",
+    "title": "Tic-Tac-Toe",
+    "description": "Line up three marks before your opponent in the timeless three-by-three duel.",
+    "category": "strategy",
+    "image": "assets/images/tic-tac-toe.svg",
+    "imageAlt": "A modern Tic-Tac-Toe board with crosses and circles",
+    "meta": "2 players",
+    "tag": "Quick rounds",
+    "url": "games/tic-tac-toe/index.html"
+  },
+  {
+    "id": "memory-cards",
+    "title": "Memory Cards",
+    "description": "Flip, remember, and match every colorful pair in the fewest possible moves.",
+    "category": "puzzle",
+    "image": "assets/images/memory-cards.svg",
+    "imageAlt": "Playful memory cards showing matching stars and moons",
+    "meta": "Brain game",
+    "tag": "Focus & recall",
+    "url": "games/memory-cards/index.html"
+  },
+  {
+    "id": "2048",
+    "title": "2048",
+    "description": "Slide and merge matching numbers while planning each move toward the 2048 tile.",
+    "category": "puzzle",
+    "image": "assets/images/2048.svg",
+    "imageAlt": "Golden numbered tiles building toward the 2048 tile",
+    "meta": "Number game",
+    "tag": "Endless challenge",
+    "url": "games/2048/index.html"
+  },
+  {
+    "id": "rock-paper-scissors",
+    "title": "Rock Paper Scissors",
+    "description": "Pick your move, read your rival, and settle the score in a best-of-three showdown.",
+    "category": "strategy",
+    "image": "assets/images/rock-paper-scissors.svg",
+    "imageAlt": "Rock, paper, and scissors symbols in a violet arena",
+    "meta": "Quick play",
+    "tag": "Fast decisions",
+    "url": "games/rock-paper-scissors/index.html"
+  },
+  {
+    "id": "word-guessing-game",
+    "title": "Word Guessing Game",
+    "description": "Use every clue wisely and uncover the hidden word one careful letter at a time.",
+    "category": "word",
+    "image": "assets/images/word-guessing-game.svg",
+    "imageAlt": "Letter tiles and a keyboard for the Word Guessing Game",
+    "meta": "Vocabulary",
+    "tag": "Daily words",
+    "url": "games/word-guessing-game/index.html"
+  },
+  {
+    "id": "sudoku",
+    "title": "Sudoku",
+    "description": "Complete every row, column, and box using focus, patience, and pure logic.",
+    "category": "puzzle",
+    "image": "assets/images/sudoku.svg",
+    "imageAlt": "A clean Sudoku number grid with highlighted cells",
+    "meta": "Logic",
+    "tag": "Multiple levels",
+    "url": "games/sudoku/index.html"
+  }
+]

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Word Guessing Game artwork</title>
+  <desc id="desc">Colorful letter tiles spell game above a compact keyboard on a pink background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="70" y1="20" x2="740" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC1D6"/>
+      <stop offset="1" stop-color="#D96598"/>
+    </linearGradient>
+    <filter id="shadow" x="-35%" y="-35%" width="170%" height="190%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#7A2D57" flood-opacity=".25"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="36" fill="url(#bg)"/>
+  <circle cx="96" cy="83" r="142" fill="#FFFFFF" opacity=".11"/>
+  <circle cx="735" cy="440" r="190" fill="#87345F" opacity=".12"/>
+  <g transform="translate(122 72)" filter="url(#shadow)" font-family="Arial, sans-serif" font-weight="800" text-anchor="middle">
+    <g transform="rotate(-5 65 70)">
+      <rect width="130" height="140" rx="23" fill="#173A5E"/>
+      <text x="65" y="92" fill="#FFFFFF" font-size="58">G</text>
+    </g>
+    <g transform="translate(142 9) rotate(3 65 70)">
+      <rect width="130" height="140" rx="23" fill="#FFF8E9"/>
+      <text x="65" y="92" fill="#D6568E" font-size="58">A</text>
+    </g>
+    <g transform="translate(284 -2) rotate(-2 65 70)">
+      <rect width="130" height="140" rx="23" fill="#B8F24B"/>
+      <text x="65" y="92" fill="#173A5E" font-size="58">M</text>
+    </g>
+    <g transform="translate(426 8) rotate(5 65 70)">
+      <rect width="130" height="140" rx="23" fill="#FFF8E9"/>
+      <text x="65" y="92" fill="#D6568E" font-size="58">E</text>
+    </g>
+  </g>
+  <g transform="translate(150 265)" filter="url(#shadow)">
+    <rect width="500" height="156" rx="30" fill="#85345F" fill-opacity=".5" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="3"/>
+    <g fill="#FFFFFF" fill-opacity=".88">
+      <rect x="28" y="27" width="38" height="36" rx="9"/><rect x="76" y="27" width="38" height="36" rx="9"/><rect x="124" y="27" width="38" height="36" rx="9"/><rect x="172" y="27" width="38" height="36" rx="9"/><rect x="220" y="27" width="38" height="36" rx="9"/><rect x="268" y="27" width="38" height="36" rx="9"/><rect x="316" y="27" width="38" height="36" rx="9"/><rect x="364" y="27" width="38" height="36" rx="9"/><rect x="412" y="27" width="38" height="36" rx="9"/>
+      <rect x="51" y="73" width="38" height="36" rx="9"/><rect x="99" y="73" width="38" height="36" rx="9"/><rect x="147" y="73" width="38" height="36" rx="9"/><rect x="195" y="73" width="38" height="36" rx="9"/><rect x="243" y="73" width="38" height="36" rx="9"/><rect x="291" y="73" width="38" height="36" rx="9"/><rect x="339" y="73" width="38" height="36" rx="9"/><rect x="387" y="73" width="38" height="36" rx="9"/>
+      <rect x="102" y="119" width="296" height="18" rx="9"/>
+    </g>
+    <g fill="#173A5E" font-family="Arial, sans-serif" font-size="13" font-weight="800" text-anchor="middle">
+      <text x="47" y="51">Q</text><text x="95" y="51">W</text><text x="143" y="51">E</text><text x="191" y="51">R</text><text x="239" y="51">T</text><text x="287" y="51">Y</text><text x="335" y="51">U</text><text x="383" y="51">I</text><text x="431" y="51">O</text>
+    </g>
+  </g>
+  <g transform="translate(620 65)">
+    <circle cx="45" cy="45" r="45" fill="#FFFFFF" fill-opacity=".9"/>
+    <text x="45" y="40" fill="#D6568E" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">TRIES</text>
+    <text x="45" y="66" fill="#173A5E" font-family="Arial, sans-serif" font-size="25" font-weight="800" text-anchor="middle">4</text>
+  </g>
+</svg>
