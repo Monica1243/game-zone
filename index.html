@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore seven classic browser games being built for Game Zone with HTML, CSS, and JavaScript.">
+  <meta name="theme-color" content="#f7f5ec">
+  <title>Game Zone — Seven Classics, One Place</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#games">Skip to the game library</a>
+
+  <header class="site-header" data-site-header>
+    <div class="site-header__inner">
+      <a class="brand" href="#top" aria-label="Game Zone home">
+        <img class="brand__logo" src="assets/icon/game_zone_logo.svg" alt="Game Zone — Play Without Limits">
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-nav__link is-active" href="#games">Games</a>
+        <a class="site-nav__link" href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__decor hero__decor--one" aria-hidden="true"></div>
+      <div class="hero__decor hero__decor--two" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <h1 id="hero-title">Seven classics.<br><span>One game zone.</span></h1>
+          <p class="hero__intro">Quick challenges, clever puzzles, and familiar favorites—all being crafted for the browser with no downloads or installs.</p>
+
+          <div class="hero__actions">
+            <a class="button button--accent" href="#games">
+              Explore the lineup
+              <svg aria-hidden="true" viewBox="0 0 20 20">
+                <path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-showcase" aria-label="Preview of the Game Zone collection">
+          <div class="hero-showcase__glow" aria-hidden="true"></div>
+
+          <div class="preview-window">
+            <div class="preview-window__bar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <p>game-zone.local</p>
+            </div>
+            <div class="preview-window__body">
+              <div class="preview-window__heading">
+                <div>
+                  <span>Featured challenge</span>
+                  <strong>Snake</strong>
+                </div>
+                <span class="status-badge">Coming soon</span>
+              </div>
+              <div class="preview-window__image">
+                <img src="assets/images/snake.svg" alt="Preview artwork for the Snake game" width="800" height="500">
+              </div>
+              <div class="preview-window__footer">
+                <span><i aria-hidden="true"></i> Arcade</span>
+                <span>Chase a new high score</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card--count" aria-hidden="true">
+            <span>Game library</span>
+            <strong>7 games</strong>
+          </div>
+
+          <div class="floating-card floating-card--tiles" aria-hidden="true">
+            <img src="assets/images/tic-tac-toe.svg" alt="" width="800" height="500">
+            <img src="assets/images/2048.svg" alt="" width="800" height="500">
+            <div>
+              <span>Up next</span>
+              <strong>More classics</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="games-section" id="games" aria-labelledby="games-title">
+      <div class="games-section__inner">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Choose your challenge</p>
+            <h2 id="games-title">Meet the lineup.</h2>
+          </div>
+          <p>Seven distinct games for quick breaks, friendly competition, and satisfying brain workouts.</p>
+        </div>
+
+        <div class="catalog-tools">
+          <label class="search-box" for="game-search">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/>
+            </svg>
+            <span class="sr-only">Search games</span>
+            <input id="game-search" type="search" placeholder="Search games" autocomplete="off" data-game-search>
+            <kbd aria-hidden="true">/</kbd>
+          </label>
+
+          <div class="filter-list" role="group" aria-label="Filter games by category">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All games</button>
+            <button class="filter-button" type="button" data-filter="strategy" aria-pressed="false">Strategy</button>
+            <button class="filter-button" type="button" data-filter="puzzle" aria-pressed="false">Puzzle</button>
+            <button class="filter-button" type="button" data-filter="arcade" aria-pressed="false">Arcade</button>
+            <button class="filter-button" type="button" data-filter="word" aria-pressed="false">Word</button>
+          </div>
+        </div>
+
+        <p class="catalog-count" data-result-count aria-live="polite">Showing all 7 games</p>
+
+        <div class="game-grid" data-game-grid>
+          <!-- Cards rendered dynamically from data/games.json -->
+        </div>
+
+        <div class="empty-state" data-empty-state hidden>
+          <span aria-hidden="true">?</span>
+          <h3>No games found</h3>
+          <p>Try another search or choose a different category.</p>
+          <button type="button" class="empty-state__reset" data-reset-catalog>Show all games</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <p>Seven familiar games, rebuilt for your next browser break.</p>
+      </div>
+      <nav class="site-footer__links" aria-label="Footer navigation">
+        <a href="#games">Browse games</a>
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

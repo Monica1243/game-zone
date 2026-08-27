@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 104" role="img" aria-labelledby="logo-title logo-description">
+  <title id="logo-title">Game Zone</title>
+  <desc id="logo-description">A game controller beside the Game Zone name and Play Without Limits tagline.</desc>
+
+  <g transform="translate(4 10)">
+    <path d="M29 12h49c12 0 21 7 25 20l9 29c3 10-2 19-12 22-8 2-14-2-19-9l-7-10H33l-7 10c-5 7-11 11-19 9-10-3-15-12-12-22l9-29c4-13 13-20 25-20Z" fill="#005979"/>
+    <path d="M31 64h43l7 10c5 7 11 11 19 9 8-2 13-9 12-17-3 4-8 6-13 6-7 0-12-4-17-11l-5-7H29l-5 7c-5 7-10 11-17 11-5 0-10-2-13-6-1 8 4 15 12 17 8 2 14-2 19-9Z" fill="#00435c" opacity=".5"/>
+
+    <g fill="#dda01d">
+      <rect x="24" y="31" width="25" height="8" rx="4"/>
+      <rect x="32.5" y="22.5" width="8" height="25" rx="4"/>
+      <circle cx="79" cy="29" r="6"/>
+      <circle cx="94" cy="41" r="6"/>
+    </g>
+
+    <circle cx="59" cy="53" r="4" fill="#f7f5ec" opacity=".9"/>
+    <path d="M54 12c2-7 9-11 17-11h8" fill="none" stroke="#dda01d" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Manrope, Avenir Next, Arial, sans-serif">
+    <text x="132" y="54" fill="#005979" font-size="38" font-weight="800" letter-spacing="-.8">GAME</text>
+    <text x="254" y="54" fill="#dda01d" font-size="38" font-weight="800" letter-spacing="-.8">ZONE</text>
+    <rect x="133" y="66" width="54" height="4" rx="2" fill="#dda01d"/>
+    <text x="133" y="86" fill="#005979" font-size="11" font-weight="700" letter-spacing="3.1">PLAY WITHOUT LIMITS</text>
+  </g>
+</svg>

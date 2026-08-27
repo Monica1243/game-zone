@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Sudoku game artwork</title>
+  <desc id="desc">A clean Sudoku number grid with highlighted cells on a fresh aqua background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="60" y1="20" x2="745" y2="475" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B4F2E9"/>
+      <stop offset="1" stop-color="#43A9B4"/>
+    </linearGradient>
+    <filter id="shadow" x="-35%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#1A6973" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="36" fill="url(#bg)"/>
+  <circle cx="714" cy="75" r="145" fill="#FFFFFF" opacity=".13"/>
+  <circle cx="80" cy="448" r="178" fill="#126D79" opacity=".1"/>
+  <path d="M86 109c100-70 178-56 248 6 71 63 153 54 231-7 66-52 107-46 153-17" fill="none" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="3" stroke-dasharray="3 15" stroke-linecap="round"/>
+  <g transform="translate(215 47) rotate(3 185 202)" filter="url(#shadow)">
+    <rect width="370" height="406" rx="33" fill="#F9FFFC"/>
+    <rect x="24" y="24" width="322" height="322" rx="18" fill="#E8F5F1"/>
+    <rect x="167" y="167" width="36" height="36" rx="7" fill="#B8F24B"/>
+    <rect x="275" y="59" width="36" height="36" rx="7" fill="#B9E7EC"/>
+    <g stroke="#7FA9A8" stroke-opacity=".48" stroke-width="1.5">
+      <path d="M60 24v322M96 24v322M132 24v322M203 24v322M239 24v322M275 24v322M311 24v322M24 60h322M24 96h322M24 132h322M24 203h322M24 239h322M24 275h322M24 311h322"/>
+    </g>
+    <g stroke="#245B67" stroke-width="4">
+      <path d="M24 131h322M24 238h322M131 24v322M238 24v322"/>
+    </g>
+    <rect x="24" y="24" width="322" height="322" rx="18" fill="none" stroke="#245B67" stroke-width="5"/>
+    <g fill="#244E62" font-family="Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">
+      <text x="42" y="50">5</text><text x="114" y="50">7</text><text x="186" y="50">9</text><text x="294" y="50">1</text>
+      <text x="78" y="86">6</text><text x="150" y="86">1</text><text x="222" y="86">5</text><text x="294" y="86">4</text>
+      <text x="42" y="122">8</text><text x="114" y="122">9</text><text x="258" y="122">6</text><text x="330" y="122">2</text>
+      <text x="78" y="158">4</text><text x="150" y="158">6</text><text x="222" y="158">8</text><text x="294" y="158">7</text>
+      <text x="42" y="194">7</text><text x="114" y="194">2</text><text x="185" y="194">3</text><text x="258" y="194">9</text><text x="330" y="194">5</text>
+      <text x="78" y="230">9</text><text x="150" y="230">5</text><text x="222" y="230">1</text><text x="294" y="230">3</text>
+      <text x="42" y="266">3</text><text x="114" y="266">1</text><text x="258" y="266">2</text><text x="330" y="266">8</text>
+      <text x="78" y="302">2</text><text x="150" y="302">7</text><text x="222" y="302">6</text><text x="294" y="302">9</text>
+      <text x="42" y="338">9</text><text x="114" y="338">8</text><text x="186" y="338">4</text><text x="294" y="338">6</text>
+    </g>
+    <g transform="translate(43 365)">
+      <circle cx="12" cy="11" r="11" fill="#B8F24B"/>
+      <path d="m7 11 4 4 7-9" fill="none" stroke="#173A5E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="34" y="16" fill="#527073" font-family="Arial, sans-serif" font-size="14" font-weight="700">No mistakes</text>
+      <text x="235" y="16" fill="#173A5E" font-family="Arial, sans-serif" font-size="14" font-weight="800">04:12</text>
+    </g>
+  </g>
+  <g transform="translate(85 72)">
+    <rect width="118" height="44" rx="22" fill="#173A5E"/>
+    <text x="59" y="28" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="13" font-weight="800" letter-spacing="1" text-anchor="middle">LOGIC MODE</text>
+  </g>
+</svg>

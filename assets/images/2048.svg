@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">2048 game artwork</title>
+  <desc id="desc">A warm golden number board with colorful tiles building toward the 2048 tile.</desc>
+  <defs>
+    <linearGradient id="bg" x1="70" y1="25" x2="740" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE99B"/>
+      <stop offset="1" stop-color="#F2AB45"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-25%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="17" flood-color="#8F5D18" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="36" fill="url(#bg)"/>
+  <circle cx="714" cy="78" r="150" fill="#FFFFFF" opacity=".14"/>
+  <circle cx="75" cy="440" r="175" fill="#C56B22" opacity=".11"/>
+  <g transform="translate(183 35) rotate(-3 217 217)" filter="url(#shadow)">
+    <rect width="434" height="434" rx="42" fill="#8B5A33" fill-opacity=".86"/>
+    <g font-family="Arial, sans-serif" font-weight="800" text-anchor="middle">
+      <g transform="translate(24 24)">
+        <rect width="86" height="86" rx="15" fill="#F5E7D2"/><text x="43" y="55" fill="#765B49" font-size="30">2</text>
+      </g>
+      <g transform="translate(124 24)">
+        <rect width="86" height="86" rx="15" fill="#F3D9A8"/><text x="43" y="55" fill="#76513B" font-size="30">4</text>
+      </g>
+      <g transform="translate(224 24)">
+        <rect width="86" height="86" rx="15" fill="#F5A65A"/><text x="43" y="55" fill="#FFFFFF" font-size="30">8</text>
+      </g>
+      <g transform="translate(324 24)">
+        <rect width="86" height="86" rx="15" fill="#EF8155"/><text x="43" y="55" fill="#FFFFFF" font-size="27">16</text>
+      </g>
+      <g transform="translate(24 124)">
+        <rect width="86" height="86" rx="15" fill="#E9684C"/><text x="43" y="55" fill="#FFFFFF" font-size="27">32</text>
+      </g>
+      <g transform="translate(124 124)">
+        <rect width="86" height="86" rx="15" fill="#DD5844"/><text x="43" y="55" fill="#FFFFFF" font-size="27">64</text>
+      </g>
+      <g transform="translate(224 124)">
+        <rect width="86" height="86" rx="15" fill="#EAC44F"/><text x="43" y="54" fill="#FFFFFF" font-size="23">128</text>
+      </g>
+      <g transform="translate(324 124)">
+        <rect width="86" height="86" rx="15" fill="#DFB43A"/><text x="43" y="54" fill="#FFFFFF" font-size="23">256</text>
+      </g>
+      <g transform="translate(24 224)">
+        <rect width="86" height="86" rx="15" fill="#C89727"/><text x="43" y="54" fill="#FFFFFF" font-size="23">512</text>
+      </g>
+      <g transform="translate(124 224)">
+        <rect width="86" height="86" rx="15" fill="#B97B25"/><text x="43" y="54" fill="#FFFFFF" font-size="20">1024</text>
+      </g>
+      <g transform="translate(224 224)">
+        <rect width="186" height="186" rx="20" fill="#173A5E"/>
+        <circle cx="93" cy="93" r="72" fill="#B8F24B" opacity=".13"/>
+        <text x="93" y="104" fill="#C7F65C" font-size="45">2048</text>
+      </g>
+      <g transform="translate(24 324)"><rect width="86" height="86" rx="15" fill="#A97654" fill-opacity=".48"/></g>
+      <g transform="translate(124 324)"><rect width="86" height="86" rx="15" fill="#A97654" fill-opacity=".48"/></g>
+    </g>
+  </g>
+  <g transform="translate(70 66)">
+    <rect width="112" height="44" rx="22" fill="#173A5E"/>
+    <text x="22" y="28" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1">BEST 8192</text>
+  </g>
+</svg>
