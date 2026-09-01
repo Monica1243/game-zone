@@ -6,17 +6,6 @@
 
 Game Zone is a responsive browser-game hub built with HTML, CSS, and vanilla JavaScript. The game presents seven classic games through a searchable, filterable catalog.
 
-## Game Library
-
-| Game | Category | Scaffold directory
-| --- | --- | --- | --- |
-| Snake | Arcade | `games/snake/` 
-| Tic-Tac-Toe | Strategy | `games/tic-tac-toe/` 
-| Memory Cards | Puzzle | `games/memory-cards/` 
-| 2048 | Puzzle | `games/2048/` 
-| Rock Paper Scissors | Strategy | `games/rock-paper-scissors/` 
-| Word Guessing Game | Word | `games/word-guess/` 
-| Sudoku | Puzzle | `games/sudoku/` 
 
 ## Getting Started
 
