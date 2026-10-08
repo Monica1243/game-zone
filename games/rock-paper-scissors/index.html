@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play a best-of-three game of Rock Paper Scissors in Game Zone.">
+  <meta name="theme-color" content="#f7f5ec">
+  <link rel="icon" type="image/svg+xml" href="../../assets/icon/game_zone_favicon.svg">
+  <title>Rock Paper Scissors | Game Zone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <div class="page-shape page-shape--left" aria-hidden="true"></div>
+  <div class="page-shape page-shape--right" aria-hidden="true"></div>
+
+  <header class="game-header">
+    <div class="game-header__inner">
+      <a class="brand" href="../../index.html" aria-label="Game Zone home">
+        <img
+          class="brand__logo"
+          src="../../assets/icon/game_zone_logo.svg"
+          alt="Game Zone — Play Without Limits"
+          width="470"
+          height="104"
+        >
+      </a>
+
+      <a class="back-link" href="../../index.html#games">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>All games</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="game-page">
+    <section class="game-hero" aria-labelledby="page-title">
+      <div class="game-hero__copy">
+        <p class="eyebrow">Quick play <span aria-hidden="true">·</span> Best of three</p>
+        <h1 id="page-title">Rock. Paper. <span>Scissors.</span></h1>
+        <p class="game-hero__intro">
+          Make your move, challenge the computer, and be the first to win two rounds.
+        </p>
+      </div>
+    </section>
+
+    <div class="game-layout">
+      <section class="game-board" id="game-board" aria-labelledby="play-title">
+        <h2 class="sr-only" id="play-title">Play Rock Paper Scissors</h2>
+
+        <div class="scoreboard" role="group" aria-label="Current match score">
+          <div class="score score--player">
+            <span class="score__label">You</span>
+            <output class="score__value" id="player-score" aria-label="Your score">0</output>
+          </div>
+
+          <div class="score score--computer">
+            <span class="score__label">Computer</span>
+            <output class="score__value" id="computer-score" aria-label="Computer score">0</output>
+          </div>
+        </div>
+
+        <div class="game-board__content">
+          <div class="section-heading">
+            <p>Your turn</p>
+            <h2 id="choice-heading">Choose your move</h2>
+          </div>
+
+          <div class="choices" role="group" aria-labelledby="choice-heading">
+            <button class="choice" id="rock" type="button" data-choice="rock" aria-pressed="false">
+              <span class="choice__icon choice__icon--rock" aria-hidden="true">✊</span>
+              <span class="choice__name">Rock</span>
+              <span class="choice__hint">Crushes scissors</span>
+            </button>
+
+            <button class="choice" id="paper" type="button" data-choice="paper" aria-pressed="false">
+              <span class="choice__icon choice__icon--paper" aria-hidden="true">🖐️</span>
+              <span class="choice__name">Paper</span>
+              <span class="choice__hint">Covers rock</span>
+            </button>
+
+            <button class="choice" id="scissors" type="button" data-choice="scissors" aria-pressed="false">
+              <span class="choice__icon choice__icon--scissors" aria-hidden="true">✌️</span>
+              <span class="choice__name">Scissors</span>
+              <span class="choice__hint">Cuts paper</span>
+            </button>
+          </div>
+
+          <div class="battle" role="group" aria-label="Current round choices">
+            <div class="pick-card pick-card--player">
+              <span class="pick-card__label">Your pick</span>
+              <output class="pick-card__icon" id="player-choice" aria-label="Your current choice">?</output>
+              <strong class="pick-card__name" id="player-choice-name">Waiting</strong>
+            </div>
+
+            <span class="versus" aria-hidden="true">VS</span>
+
+            <div class="pick-card pick-card--computer">
+              <span class="pick-card__label">Computer</span>
+              <output class="pick-card__icon" id="computer-choice" aria-label="Computer's current choice">?</output>
+              <strong class="pick-card__name" id="computer-choice-name">Waiting</strong>
+            </div>
+          </div>
+
+          <div class="result-panel" role="status" aria-live="polite" aria-atomic="true">
+            <span class="result-panel__marker" aria-hidden="true">✦</span>
+            <div>
+              <span class="result-panel__label">Round result</span>
+              <p id="result-message">Choose rock, paper, or scissors to begin.</p>
+            </div>
+          </div>
+
+          <button class="reset-button" id="reset-game" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 11a8 8 0 1 0-2.34 5.66M20 5v6h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Start a new match
+          </button>
+        </div>
+      </section>
+
+      <aside class="rules-card" aria-labelledby="rules-title">
+        <div class="rules-card__heading">
+          <span aria-hidden="true">?</span>
+          <div>
+            <p>Need a reminder?</p>
+            <h2 id="rules-title">Quick rules</h2>
+          </div>
+        </div>
+
+        <ol class="rule-list">
+          <li>
+            <span class="rule-list__icon rule-list__icon--rock" aria-hidden="true">✊</span>
+            <p><strong>Rock</strong><span>crushes scissors</span></p>
+          </li>
+          <li>
+            <span class="rule-list__icon rule-list__icon--paper" aria-hidden="true">🖐️</span>
+            <p><strong>Paper</strong><span>covers rock</span></p>
+          </li>
+          <li>
+            <span class="rule-list__icon rule-list__icon--scissors" aria-hidden="true">✌️</span>
+            <p><strong>Scissors</strong><span>cuts paper</span></p>
+          </li>
+        </ol>
+
+        <p class="rules-tip">
+          <span aria-hidden="true">★</span>
+          A tie does not count as a round win.
+        </p>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
